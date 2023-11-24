@@ -22,12 +22,17 @@ void loop() {
     lcd.print("Matrícula " + String(i + 1) + ":");
     
     lcd.setCursor(0, 1);
+
+    lcd.print(matriculas[i]);
+    //Temporizador en lugar de botón 
     lcd.print(matriculas[i]);//imprime matricula
     
+
     delay(2000);
   }
 
   lcd.clear();
+  //Temporizador en lugar de botón 
   delay(2000);
 }
 
